@@ -20,3 +20,5 @@ Route::get('/', function () {
 
 Route::get('/testAPI', [OCRController::class, 'uploadImage']);
 Route::post('/upload-image', [OCRController::class, 'uploadFile'])->name('upload-file');
+Route::get('/fuzzy-match', [OCRController::class, 'showFuzzyMatch'])->name('show-fuzzt-match');
+Route::post('/search-keyword', [OCRController::class, 'searchKeyword'])->name('search-keyword');
